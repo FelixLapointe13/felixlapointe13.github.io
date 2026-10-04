@@ -473,6 +473,7 @@ a:hover {
   position: relative;
   overflow: hidden;
   width: 100%;
+  border-radius: 20px;
 }
 .carte .carte__media {
   width: 100%;
