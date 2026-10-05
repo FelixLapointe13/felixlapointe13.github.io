@@ -1362,7 +1362,7 @@ a:hover {
 
 .cartes {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 25px;
