@@ -1361,6 +1361,8 @@ a:hover {
 }
 
 .cartes {
+  position: relative;
+  z-index: 3;
   display: grid;
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 25px;
@@ -2128,10 +2130,26 @@ a:hover {
   flex-direction: column;
   gap: 30px;
 }
+.credits .liste_trames {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.credits .liste_trames .trames {
+  list-style: none;
+  padding: 0;
+}
+@media (width <= 768px) {
+  .credits .liste_trames {
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+  }
+}
 
 .swiper {
-  overflow: visible;
   margin: 100px 0;
+  overflow: visible;
 }
 @media (width <= 768px) {
   .swiper {
