@@ -1453,6 +1453,7 @@ a:hover {
   position: relative;
   border-radius: 25px;
   border: 5px solid var(--color-bg-secondary);
+  overflow: hidden;
 }
 .carte__carousel .carte__media {
   width: 100%;
@@ -1491,6 +1492,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 .carte__carousel .carte__content h3,
 .carte__carousel .carte__content p {
