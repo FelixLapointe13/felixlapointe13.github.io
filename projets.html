@@ -10,16 +10,16 @@
     <script src="scripts/main.js" defer></script>
 </head>
 
-<body>
-    <header class="header" id="hub" data-component="Header">
+<body data-component="Scrolly">
+    <header class="header" data-component="Header">
         <div class="wrapper">
             <div class="nav__gauche">
                 <a href="index.html"><img src="assets/images/fl_logo.png" alt="Logo Félix"></a>
                 <ul class="menu">
-                    <li><a href="#hub">Hub</a></li>
-                    <li><a href="index.html">À Propos</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#propos">À Propos</a></li>
                     <li><a href="projets.html">Projets</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
             </div>
 
@@ -53,10 +53,10 @@
                 </div>
                 <div class="nav__mobile">
                     <ul class="menu__mobile">
-                        <li><a href="#hub">Hub</a></li>
-                        <li><a href="index.html">À Propos</a></li>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html#propos">À Propos</a></li>
                         <li><a href="projets.html">Projets</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#footer">Contact</a></li>
                     </ul>
                     <span class="ligne"></span>
                     <ul class="hub__mobile">
@@ -79,7 +79,7 @@
     </header>
 
 
-    <section class="hero section">
+    <section class="hero hero__projets">
         <div class="wrapper">
             <div class="hero__media">
                 <img src="assets/images/fl_logo.png" alt="Logo Félix" />
@@ -94,7 +94,7 @@
     <section class="grille__projets section">
         <div class="wrapper">
             <div class="cartes">
-                <div class="carte">
+                <a href="project_rival.html" class="carte" data-scrolly="fade">
                     <div class="carte__media">
                         <img src="assets/images/project_rival_thumbnail.jpg" alt="project: Rival" />
                     </div>
@@ -107,16 +107,14 @@
                                 </div>
                                 <p>Développement Web - Projet Personnel</p>
                             </div>
-                            <a href="project_rival.html">
-                                <svg class="icon icon--slg icone_projet">
-                                    <use href="#icon-plus"></use>
-                                </svg>
-                            </a>
+                            <svg class="icon icon--slg icone_projet">
+                                <use href="#icon-plus"></use>
+                            </svg>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="carte">
+                <a href="vgm_entertainment.html" class="carte" data-scrolly="fadeIn">
                     <div class="carte__media">
                         <img src="assets/images/vgm_entertainment_thumbnail.jpg" alt="VGM Entertainment" />
                     </div>
@@ -129,16 +127,14 @@
                                 </div>
                                 <p>Développement Web - Projet Personnel</p>
                             </div>
-                            <a href="vgm_entertainment.html">
-                                <svg class="icon icon--slg icone_projet">
-                                    <use href="#icon-plus"></use>
-                                </svg>
-                            </a>
+                            <svg class="icon icon--slg icone_projet">
+                                <use href="#icon-plus"></use>
+                            </svg>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="carte">
+                <a href="audioverse.html" class="carte" data-scrolly="fade">
                     <div class="carte__media">
                         <img src="assets/images/audioverse_thumbnail.jpg" alt="AudioVerse" />
                     </div>
@@ -151,18 +147,16 @@
                                 </div>
                                 <p>Développement Web - Projet Scolaire</p>
                             </div>
-                            <a href="audioverse.html">
-                                <svg class="icon icon--slg icone_projet">
-                                    <use href="#icon-plus"></use>
-                                </svg>
-                            </a>
+                            <svg class="icon icon--slg icone_projet">
+                                <use href="#icon-plus"></use>
+                            </svg>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="carte">
+                <a href="webjam.html" class="carte" data-scrolly="fadeIn">
                     <div class="carte__media">
-                        <img src="assets/images/webjam_v1_thumbnail.jpg" alt="project: Rival" />
+                        <img src="assets/images/webjam_thumbnail.jpg" alt="iGenesis" />
                     </div>
                     <div class="carte__content">
                         <div class="content__projet">
@@ -173,16 +167,14 @@
                                 </div>
                                 <p>Développement Web - Projet Scolaire</p>
                             </div>
-                            <a href="webjam.html">
-                                <svg class="icon icon--slg icone_projet">
-                                    <use href="#icon-plus"></use>
-                                </svg>
-                            </a>
+                            <svg class="icon icon--slg icone_projet">
+                                <use href="#icon-plus"></use>
+                            </svg>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="carte">
+                <a href="boxotel.html" class="carte" data-scrolly="fade">
                     <div class="carte__media">
                         <img src="assets/images/boxotel_thumbnail.jpg" alt="Boxotel" />
                     </div>
@@ -195,27 +187,34 @@
                                 </div>
                                 <p>Développement Web - Projet Scolaire</p>
                             </div>
-                            <a href="boxotel.html">
-                                <svg class="icon icon--slg icone_projet">
-                                    <use href="#icon-plus"></use>
-                                </svg>
-                            </a>
+                            <svg class="icon icon--slg icone_projet">
+                                <use href="#icon-plus"></use>
+                            </svg>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="wrapper">
             <div class="footer__top">
                 <a href="index.html" class="logo">
                     <img src="assets/images/fl_logo.png" alt="Logo FL">
                 </a>
+                <div class="contact__info">
+                    <a href="mailto:lapointefelix13@gmail.com"><svg class="icon icon--md">
+                            <use href="#icon-mail"></use>
+                        </svg>lapointefelix13@gmail.com</a>
+                    <a href="tel:+14384074642"><svg class="icon">
+                            <use href="#icon-telephone"></use>
+                        </svg>(438) 407-4642</a>
+                </div>
+
                 <ul class="menu">
-                    <li><a href="#hub">Hub</a></li>
-                    <li><a href="index.html">À Propos</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#propos">À Propos</a></li>
                     <li><a href="projets.html">Projets</a></li>
                     <li><a href="">Utilisation de l'IA</a></li>
                 </ul>

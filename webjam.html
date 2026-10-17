@@ -10,16 +10,16 @@
     <script src="scripts/main.js" defer></script>
 </head>
 
-<body>
-    <header class="header" id="hub" data-component="Header">
+<body data-component="Scrolly">
+    <header class="header" data-component="Header">
         <div class="wrapper">
             <div class="nav__gauche">
                 <a href="index.html"><img src="assets/images/fl_logo.png" alt="Logo Félix"></a>
                 <ul class="menu">
-                    <li><a href="#hub">Hub</a></li>
-                    <li><a href="index.html">À Propos</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#propos">À Propos</a></li>
                     <li><a href="projets.html">Projets</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
             </div>
 
@@ -53,10 +53,10 @@
                 </div>
                 <div class="nav__mobile">
                     <ul class="menu__mobile">
-                        <li><a href="#hub">Hub</a></li>
-                        <li><a href="index.html">À Propos</a></li>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html#propos">À Propos</a></li>
                         <li><a href="projets.html">Projets</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#footer">Contact</a></li>
                     </ul>
                     <span class="ligne"></span>
                     <ul class="hub__mobile">
@@ -79,17 +79,17 @@
     </header>
 
 
-    <section class="hero section">
+    <section class="hero hero__projets">
         <div class="wrapper">
             <div class="hero__content content_detail_projet">
                 <div class="content_text content_detail">
                     <h1>WebJam</h1>
                     <h2>Developpement web - Projet scolaire</h2>
-                    <h3>Intégration et developpement HTML, CSS et JS du site pour le WebJam</h3>
+                    <h3>Intégration et developpement HTML, CSS et JS d'un site d'une invention interdite pour le WebJam</h3>
                     <a href="#" target="_blank" class="bouton">Voir le site</a>
                 </div>
-                <div class="content_media thumbnail_detail">
-                    <img src="assets/images/webjam_v1_thumbnail.jpg" alt="WebJam" />
+                <div class="content_media thumbnail_detail" data-scrolly="fromRight">
+                    <img src="assets/images/webjam_thumbnail.jpg" alt="iGenesis" />
                 </div>
             </div>
         </div>
@@ -98,12 +98,20 @@
     <section class="description section">
         <div class="wrapper">
             <div class="description__text">
-                <h2>Qu’est ce que WebJam?</h2>
-                <p>À venir... (passer le 12 octobre)</p>
+                <h2>Qu’est ce que iGenesis?</h2>
+                <p>
+                    Le site d’iGenesis est un
+                    <strong>site de présentation</strong>
+                    et
+                    <strong>de vente</strong>
+                    d’une invention interdite :
+                    <strong>le Neuralyseur</strong>
+                    . Ce produit est dans le radar de plusieurs qui souhaitent l’acheter pour leur propre usage.
+                </p>
                 <div class="utilisations">
                     <div class="utilisation">
                         <h3>Logiciels utilisés</h3>
-                        <div class="icones_utilisation">
+                        <div class="icones_utilisation" data-scrolly="fromBottom">
                             <svg class="icon icon--slg">
                                 <use href="#icon-figma"></use>
                             </svg>
@@ -114,7 +122,7 @@
                     </div>
                     <div class="utilisation">
                         <h3>Languages utilisés</h3>
-                        <div class="icones_utilisation">
+                        <div class="icones_utilisation" data-scrolly="fromBottom">
                             <svg class="icon icon--slg">
                                 <use href="#icon-html"></use>
                             </svg>
@@ -129,12 +137,12 @@
                 </div>
                 <div class="ia">
                     <h3>Utilisation de l’IA</h3>
-                    <p>(À voir durant le WebJam (10 et 11 octobre))</p>
+                    <p>Pour les images utilisées dans le site.</p>
                 </div>
             </div>
-            <div class="description__media">
-                <img src="assets/images/webjam_v1_section.jpg" alt="section WebJam" />
-                <p>À venir...</p>
+            <div class="description__media" data-scrolly="flip" data-no-repeat>
+                <img src="assets/images/igenesis_section.jpg" alt="section iGenesis" />
+                <p>Sélection de différents modèles et accessoires</p>
             </div>
         </div>
     </section>
@@ -144,60 +152,45 @@
             <h2>Étapes:</h2>
             <div class="swiper" data-component="Carousel">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide carte__carousel">
+                    <div class="swiper-slide carte__scroll">
                         <div class="carte__media">
                             <img src="assets/images/webjam/00-a_venir_webjam.jpg" alt="Étape 1" />
-                            <svg class="icon icone_carousel icon--lg">
-                                <use href="#icon-size_up"></use>
-                            </svg>
                         </div>
                         <div class="carte__content">
                             <h3>1 — À venir...</h3>
                             <p>À venir...</p>
                         </div>
                     </div>
-                    <div class="swiper-slide carte__carousel">
+                    <div class="swiper-slide carte__scroll">
                         <div class="carte__media">
                             <img src="assets/images/webjam/00-a_venir_webjam.jpg" alt="Étape 2" />
-                            <svg class="icon icone_carousel icon--lg">
-                                <use href="#icon-size_up"></use>
-                            </svg>
                         </div>
                         <div class="carte__content">
                             <h3>2 — À venir...</h3>
                             <p>À venir...</p>
                         </div>
                     </div>
-                    <div class="swiper-slide carte__carousel">
+                    <div class="swiper-slide carte__scroll">
                         <div class="carte__media">
                             <img src="assets/images/webjam/00-a_venir_webjam.jpg" alt="Étape 3" />
-                            <svg class="icon icone_carousel icon--lg">
-                                <use href="#icon-size_up"></use>
-                            </svg>
                         </div>
                         <div class="carte__content">
                             <h3>3 — À venir...</h3>
                             <p>À venir...</p>
                         </div>
                     </div>
-                    <div class="swiper-slide carte__carousel">
+                    <div class="swiper-slide carte__scroll">
                         <div class="carte__media">
                             <img src="assets/images/webjam/00-a_venir_webjam.jpg" alt="Étape 4" />
-                            <svg class="icon icone_carousel icon--lg">
-                                <use href="#icon-size_up"></use>
-                            </svg>
                         </div>
                         <div class="carte__content">
                             <h3>4 — À venir...</h3>
                             <p>À venir...</p>
                         </div>
                     </div>
-                    <div class="swiper-slide carte__carousel">
+                    <div class="swiper-slide carte__scroll">
                         <div class="carte__media">
                             <img src="assets/images/webjam/00-a_venir_webjam.jpg" alt="Étape 5" />
-                            <svg class="icon icone_carousel icon--lg">
-                                <use href="#icon-size_up"></use>
-                            </svg>
                         </div>
                         <div class="carte__content">
                             <h3>5 - À venir...</h3>
@@ -217,7 +210,7 @@
                 <ul class="credits_liste">
                     <li>Félix Lapointe: developpement web</li>
                     <li>Félix Charron: DA et design</li>
-                    <li>Nathan Roumiguières: developpement web</li>
+                    <li>Nathan Roumiguières: intégration et developpement web</li>
                     <li>Benjamin Bathalon: programmation</li>
                 </ul>
             </div>
@@ -227,15 +220,24 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="wrapper">
             <div class="footer__top">
                 <a href="index.html" class="logo">
                     <img src="assets/images/fl_logo.png" alt="Logo FL">
                 </a>
+                <div class="contact__info">
+                    <a href="mailto:lapointefelix13@gmail.com"><svg class="icon icon--md">
+                            <use href="#icon-mail"></use>
+                        </svg>lapointefelix13@gmail.com</a>
+                    <a href="tel:+14384074642"><svg class="icon">
+                            <use href="#icon-telephone"></use>
+                        </svg>(438) 407-4642</a>
+                </div>
+
                 <ul class="menu">
-                    <li><a href="#hub">Hub</a></li>
-                    <li><a href="index.html">À Propos</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#propos">À Propos</a></li>
                     <li><a href="projets.html">Projets</a></li>
                     <li><a href="">Utilisation de l'IA</a></li>
                 </ul>

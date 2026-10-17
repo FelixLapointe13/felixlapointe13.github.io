@@ -10,16 +10,16 @@
     <script src="scripts/main.js" defer></script>
 </head>
 
-<body>
-    <header class="header" id="hub" data-component="Header">
+<body data-component="Scrolly">
+    <header class="header" data-component="Header">
         <div class="wrapper">
             <div class="nav__gauche">
                 <a href="index.html"><img src="assets/images/fl_logo.png" alt="Logo Félix"></a>
                 <ul class="menu">
-                    <li><a href="#hub">Hub</a></li>
-                    <li><a href="index.html">À Propos</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#propos">À Propos</a></li>
                     <li><a href="projets.html">Projets</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
             </div>
 
@@ -53,10 +53,10 @@
                 </div>
                 <div class="nav__mobile">
                     <ul class="menu__mobile">
-                        <li><a href="#hub">Hub</a></li>
-                        <li><a href="index.html">À Propos</a></li>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html#propos">À Propos</a></li>
                         <li><a href="projets.html">Projets</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#footer">Contact</a></li>
                     </ul>
                     <span class="ligne"></span>
                     <ul class="hub__mobile">
@@ -90,14 +90,14 @@
                     <h2>Intégration / Développement web</h2>
                     <h3>Je suis un apprenti éternel du html, css et js qui produit et intègre des maquettes de site web.</h3>
                 </div>
-                <div class="content_media">
+                <div class="content_media" data-scrolly="fromRight">
                     <img src="assets/images/photo_felix.png" alt="profil Félix" />
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="outils section">
+    <section class="outils section" id="propos">
         <div class="wrapper">
             <div class="outils__content">
                 <h2>La conception et l’intégration d’interface web, ça c’est mon talent!</h2>
@@ -115,7 +115,7 @@
                 <div class="outils__plus">
                     <div class="outil">
                         <h2>Languages</h2>
-                        <div class="icones">
+                        <div class="icones" data-scrolly="fromBottom">
                             <svg class="icon icon--slg">
                                 <use href="#icon-html"></use>
                             </svg>
@@ -129,7 +129,7 @@
                     </div>
                     <div class="outil">
                         <h2>Logiciels</h2>
-                        <div class="icones">
+                        <div class="icones" data-scrolly="fromBottom">
                             <svg class="icon icon--slg">
                                 <use href="#icon-figma"></use>
                             </svg>
@@ -166,7 +166,7 @@
                         Ce qui me
                         <span>passionne</span>
                     </h2>
-                    <div class="points__moi">
+                    <div class="points__moi" data-scrolly="fade">
                         <p>
                             <svg class="icon icon--md">
                                 <use href="#icon-pokemon"></use>
@@ -198,7 +198,7 @@
                         Ce qui me
                         <span>compose</span>
                     </h2>
-                    <div class="points__moi">
+                    <div class="points__moi" data-scrolly="fade">
                         <p>
                             <svg class="icon icon--md">
                                 <use href="#icon-dossier"></use>
@@ -259,21 +259,30 @@
                 </div>
                 <a href="projets.html" class="bouton">Voir les projets</a>
             </div>
-            <div class="candidature__media">
+            <div class="candidature__media" data-scrolly="fromRight">
                 <img src="assets/images/photo_felix_2.png" alt="profil Félix" />
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="wrapper">
             <div class="footer__top">
                 <a href="index.html" class="logo">
                     <img src="assets/images/fl_logo.png" alt="Logo FL">
                 </a>
+                <div class="contact__info">
+                    <a href="mailto:lapointefelix13@gmail.com"><svg class="icon icon--md">
+                            <use href="#icon-mail"></use>
+                        </svg>lapointefelix13@gmail.com</a>
+                    <a href="tel:+14384074642"><svg class="icon">
+                            <use href="#icon-telephone"></use>
+                        </svg>(438) 407-4642</a>
+                </div>
+
                 <ul class="menu">
-                    <li><a href="#hub">Hub</a></li>
-                    <li><a href="index.html">À Propos</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#propos">À Propos</a></li>
                     <li><a href="projets.html">Projets</a></li>
                     <li><a href="">Utilisation de l'IA</a></li>
                 </ul>
