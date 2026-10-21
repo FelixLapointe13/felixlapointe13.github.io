@@ -1336,6 +1336,7 @@ a:hover {
   padding: 7px 15px;
   border-radius: 10px;
   border: 1px solid var(--color-bg-secondary);
+  transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .bouton:hover {
   background-color: var(--color-bg-primary);
@@ -1346,6 +1347,7 @@ a:hover {
   border: 1px solid var(--color-white);
   padding: 10px 15px;
   border-radius: 20px;
+  transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .bouton_secondaire:hover {
   background-color: var(--color-white);
@@ -1586,11 +1588,17 @@ a:hover {
     padding-left: 0;
   }
 }
-.footer .footer__top a {
-  color: var(--color-white);
+.footer .footer__top .menu a {
+  background: linear-gradient(to right, var(--color-black) 50%, var(--color-white) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background-position 0.5s ease;
 }
-.footer .footer__top a:hover {
-  color: var(--color-black);
+.footer .footer__top .menu a:hover {
+  background-position: 0 0;
 }
 @media (width <= 1024px) {
   .footer .footer__top {
@@ -1608,6 +1616,10 @@ a:hover {
   display: flex;
   gap: 20px;
   align-items: center;
+  color: var(--color-white);
+}
+.footer .contact__info a:hover {
+  color: var(--color-black);
 }
 @media (width <= 768px) {
   .footer .contact__info {
@@ -1629,7 +1641,7 @@ a:hover {
 .header {
   height: 120px;
   padding: 20px 0;
-  z-index: 10;
+  z-index: 7;
   width: 100%;
   top: 0;
   position: sticky;
@@ -1648,7 +1660,6 @@ a:hover {
 .header .wrapper {
   display: flex;
   justify-content: space-between;
-  z-index: 5;
   position: relative;
 }
 .header-is-hidden.is-scrolling-down:not(.nav-is-active) .header {
@@ -1658,15 +1669,31 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 50px;
+  position: relative;
+  z-index: 5;
 }
 .header .nav__gauche img {
   height: 64px;
+}
+.header .nav__gauche .menu a {
+  background: linear-gradient(to right, var(--color-bg-secondary) 50%, var(--color-black) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background-position 0.5s ease;
+}
+.header .nav__gauche .menu a:hover {
+  background-position: 0 0;
 }
 .header .menu {
   display: flex;
   align-items: center;
   gap: 10px;
   list-style: none;
+  position: relative;
+  z-index: 5;
 }
 .header .menu a {
   display: flex;
@@ -1691,7 +1718,7 @@ a:hover {
   position: relative;
   width: var(--bar-width);
   height: var(--bar-width);
-  z-index: 10;
+  z-index: 8;
 }
 .header .header__toggle span {
   background: var(--color-black);
@@ -2238,6 +2265,18 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+.credits .credits_liste a {
+  background: linear-gradient(to right, var(--color-white) 50%, var(--color-black) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background-position 0.5s ease;
+}
+.credits .credits_liste a:hover {
+  background-position: 0 0;
 }
 .credits .liste_trames {
   display: flex;
