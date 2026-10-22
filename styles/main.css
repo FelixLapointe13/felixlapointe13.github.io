@@ -1845,6 +1845,7 @@ a:hover {
   }
 }
 .hero .hero__content {
+  margin-top: 100px;
   position: relative;
   z-index: 3;
   display: grid;
@@ -1857,7 +1858,7 @@ a:hover {
   .hero .hero__content {
     grid-template-columns: 1fr;
     gap: 0;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 .hero .content_text {
@@ -2091,6 +2092,12 @@ a:hover {
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
 }
+@media (width <= 768px) {
+  .video .video_presentation .icon {
+    top: 35%;
+    left: 40%;
+  }
+}
 .video .video_presentation:hover .icon {
   transform: scale(2);
 }
@@ -2232,10 +2239,23 @@ a:hover {
   overflow-x: hidden;
   width: 100%;
 }
-.scroll__horizontal .section--horiz {
+.scroll__horizontal .js-horiz {
   margin-top: 50px;
   display: flex;
   gap: 100px;
+  width: -moz-max-content;
+  width: max-content;
+  will-change: transform;
+  padding-right: 430px;
+}
+@media (width <= 768px) {
+  .scroll__horizontal .js-horiz {
+    padding-right: 50px;
+  }
+}
+.scroll__horizontal .js-panel {
+  flex: 0 0 auto;
+  width: min(90vw, 1440px);
 }
 
 .credits {

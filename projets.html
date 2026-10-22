@@ -11,6 +11,7 @@
 </head>
 
 <body data-component="Scrolly">
+
     <header class="header" data-component="Header" data-threshold="0.1">
         <div class="wrapper">
             <div class="nav__gauche">
@@ -78,155 +79,158 @@
         </section>
     </header>
 
+    <div id="smooth-wrapper" data-component="Scroller">
+        <div id="smooth-content">
 
-    <section class="hero hero__projets">
-        <div class="wrapper">
-            <div class="hero__media">
-                <img src="assets/images/fl_logo.png" alt="Logo Félix" />
-            </div>
-            <div class="hero__content content__projet">
-                <h1>Mes projets</h1>
-                <p>Une sélection de projets réalisés durant ma formation et mes projets personnels.</p>
-            </div>
-        </div>
-    </section>
 
-    <section class="grille__projets section">
-        <div class="wrapper">
-            <div class="cartes">
-                <a href="project_rival.html" class="carte" data-scrolly="fade">
-                    <div class="carte__media">
-                        <img src="assets/images/project_rival_thumbnail.jpg" alt="project: Rival" />
+            <section class="hero hero__projets">
+                <div class="wrapper">
+                    <div class="hero__media">
+                        <img src="assets/images/fl_logo.png" alt="Logo Félix" />
                     </div>
-                    <div class="carte__content">
-                        <div class="content__projet">
-                            <div class="content__texte">
-                                <div class="top__content">
-                                    <h3>Project: Rival</h3>
-                                    <hr />
-                                </div>
-                                <p>Développement Web - Projet Personnel</p>
-                            </div>
-                            <svg class="icon icon--slg icone_projet">
-                                <use href="#icon-plus"></use>
-                            </svg>
-                        </div>
+                    <div class="hero__content content__projet">
+                        <h1>Mes projets</h1>
+                        <p>Une sélection de projets réalisés durant ma formation et mes projets personnels.</p>
                     </div>
-                </a>
-
-                <a href="vgm_entertainment.html" class="carte" data-scrolly="fadeIn">
-                    <div class="carte__media">
-                        <img src="assets/images/vgm_entertainment_thumbnail.jpg" alt="VGM Entertainment" />
-                    </div>
-                    <div class="carte__content">
-                        <div class="content__projet">
-                            <div class="content__texte">
-                                <div class="top__content">
-                                    <h3>VGM Entertainment</h3>
-                                    <hr />
-                                </div>
-                                <p>Développement Web - Projet Personnel</p>
-                            </div>
-                            <svg class="icon icon--slg icone_projet">
-                                <use href="#icon-plus"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="audioverse.html" class="carte" data-scrolly="fade">
-                    <div class="carte__media">
-                        <img src="assets/images/audioverse_thumbnail.jpg" alt="AudioVerse" />
-                    </div>
-                    <div class="carte__content">
-                        <div class="content__projet">
-                            <div class="content__texte">
-                                <div class="top__content">
-                                    <h3>AudioVerse</h3>
-                                    <hr />
-                                </div>
-                                <p>Développement Web - Projet Scolaire</p>
-                            </div>
-                            <svg class="icon icon--slg icone_projet">
-                                <use href="#icon-plus"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="webjam.html" class="carte" data-scrolly="fadeIn">
-                    <div class="carte__media">
-                        <img src="assets/images/webjam_thumbnail.jpg" alt="iGenesis" />
-                    </div>
-                    <div class="carte__content">
-                        <div class="content__projet">
-                            <div class="content__texte">
-                                <div class="top__content">
-                                    <h3>WebJam</h3>
-                                    <hr />
-                                </div>
-                                <p>Développement Web - Projet Scolaire</p>
-                            </div>
-                            <svg class="icon icon--slg icone_projet">
-                                <use href="#icon-plus"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="boxotel.html" class="carte" data-scrolly="fade">
-                    <div class="carte__media">
-                        <img src="assets/images/boxotel_thumbnail.jpg" alt="Boxotel" />
-                    </div>
-                    <div class="carte__content">
-                        <div class="content__projet">
-                            <div class="content__texte">
-                                <div class="top__content">
-                                    <h3>Boxotel</h3>
-                                    <hr />
-                                </div>
-                                <p>Développement Web - Projet Scolaire</p>
-                            </div>
-                            <svg class="icon icon--slg icone_projet">
-                                <use href="#icon-plus"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer" id="footer">
-        <div class="wrapper">
-            <div class="footer__top">
-                <a href="index.html" class="logo">
-                    <img src="assets/images/fl_logo.png" alt="Logo FL">
-                </a>
-                <div class="contact__info">
-                    <a href="mailto:lapointefelix13@gmail.com"><svg class="icon icon--md">
-                            <use href="#icon-mail"></use>
-                        </svg>lapointefelix13@gmail.com</a>
-                    <a href="tel:+14384074642"><svg class="icon">
-                            <use href="#icon-telephone"></use>
-                        </svg>(438) 407-4642</a>
                 </div>
+            </section>
 
-                <ul class="menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="index.html#propos">À Propos</a></li>
-                    <li><a href="projets.html">Projets</a></li>
-                    <li><a href="">Utilisation de l'IA</a></li>
-                </ul>
-            </div>
-            <hr>
-            <div class="footer__bottom">
-                <p>Photo: Alexandre Donato @2026</p>
-                <p>2026 © Félix Lapointe</p>
-            </div>
+            <section class="grille__projets section">
+                <div class="wrapper">
+                    <div class="cartes">
+                        <a href="project_rival.html" class="carte" data-scrolly="fade">
+                            <div class="carte__media">
+                                <img src="assets/images/project_rival_thumbnail.jpg" alt="project: Rival" />
+                            </div>
+                            <div class="carte__content">
+                                <div class="content__projet">
+                                    <div class="content__texte">
+                                        <div class="top__content">
+                                            <h3>Project: Rival</h3>
+                                            <hr />
+                                        </div>
+                                        <p>Développement Web - Projet Personnel</p>
+                                    </div>
+                                    <svg class="icon icon--slg icone_projet">
+                                        <use href="#icon-plus"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
 
-        </div>
-    </footer>
+                        <a href="vgm_entertainment.html" class="carte" data-scrolly="fadeIn">
+                            <div class="carte__media">
+                                <img src="assets/images/vgm_entertainment_thumbnail.jpg" alt="VGM Entertainment" />
+                            </div>
+                            <div class="carte__content">
+                                <div class="content__projet">
+                                    <div class="content__texte">
+                                        <div class="top__content">
+                                            <h3>VGM Entertainment</h3>
+                                            <hr />
+                                        </div>
+                                        <p>Développement Web - Projet Personnel</p>
+                                    </div>
+                                    <svg class="icon icon--slg icone_projet">
+                                        <use href="#icon-plus"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="audioverse.html" class="carte" data-scrolly="fade">
+                            <div class="carte__media">
+                                <img src="assets/images/audioverse_thumbnail.jpg" alt="AudioVerse" />
+                            </div>
+                            <div class="carte__content">
+                                <div class="content__projet">
+                                    <div class="content__texte">
+                                        <div class="top__content">
+                                            <h3>AudioVerse</h3>
+                                            <hr />
+                                        </div>
+                                        <p>Développement Web - Projet Scolaire</p>
+                                    </div>
+                                    <svg class="icon icon--slg icone_projet">
+                                        <use href="#icon-plus"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="webjam.html" class="carte" data-scrolly="fadeIn">
+                            <div class="carte__media">
+                                <img src="assets/images/webjam_thumbnail.jpg" alt="iGenesis" />
+                            </div>
+                            <div class="carte__content">
+                                <div class="content__projet">
+                                    <div class="content__texte">
+                                        <div class="top__content">
+                                            <h3>WebJam</h3>
+                                            <hr />
+                                        </div>
+                                        <p>Développement Web - Projet Scolaire</p>
+                                    </div>
+                                    <svg class="icon icon--slg icone_projet">
+                                        <use href="#icon-plus"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="boxotel.html" class="carte" data-scrolly="fade">
+                            <div class="carte__media">
+                                <img src="assets/images/boxotel_thumbnail.jpg" alt="Boxotel" />
+                            </div>
+                            <div class="carte__content">
+                                <div class="content__projet">
+                                    <div class="content__texte">
+                                        <div class="top__content">
+                                            <h3>Boxotel</h3>
+                                            <hr />
+                                        </div>
+                                        <p>Développement Web - Projet Scolaire</p>
+                                    </div>
+                                    <svg class="icon icon--slg icone_projet">
+                                        <use href="#icon-plus"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer" id="footer">
+                <div class="wrapper">
+                    <div class="footer__top">
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/fl_logo.png" alt="Logo FL">
+                        </a>
+                        <div class="contact__info">
+                            <a href="mailto:lapointefelix13@gmail.com"><svg class="icon icon--md">
+                                    <use href="#icon-mail"></use>
+                                </svg>lapointefelix13@gmail.com</a>
+                            <a href="tel:+14384074642"><svg class="icon">
+                                    <use href="#icon-telephone"></use>
+                                </svg>(438) 407-4642</a>
+                        </div>
+
+                        <ul class="menu">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="index.html#propos">À Propos</a></li>
+                            <li><a href="projets.html">Projets</a></li>
+                            <li><a href="">Utilisation de l'IA</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="footer__bottom">
+                        <p>Photo: Alexandre Donato @2026</p>
+                        <p>2026 © Félix Lapointe</p>
+                    </div>
+
+                </div>
+            </footer>
 
 </body>
 
