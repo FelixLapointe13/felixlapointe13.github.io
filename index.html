@@ -15,7 +15,9 @@
     <header class="header" data-component="Header" data-threshold="0.1">
         <div class="wrapper">
             <div class="nav__gauche">
-                <a href="index.html"><img src="assets/images/fl_logo.png" alt="Logo Félix"></a>
+                <a href="index.html" class="logo"><img src="assets/images/fl_logo.png" alt="Logo Félix">
+                    <h3>Félix Lapointe</h3>
+                </a>
                 <ul class="menu">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="index.html#propos">À Propos</a></li>
@@ -83,6 +85,10 @@
         <div id="smooth-content">
 
 
+            <script>
+                document.title = "Félix Lapointe - Portfolio";
+            </script>
+
             <section class="hero">
                 <div class="wrapper">
                     <div class="hero__media">
@@ -93,6 +99,7 @@
                             <h1>Félix Lapointe</h1>
                             <h2>Intégration / Développement web</h2>
                             <h3>Je suis un apprenti éternel du html, css et js qui produit et intègre des maquettes de site web.</h3>
+                            <a href="projets.html" class="bouton">Voir les projets</a>
                         </div>
                         <div class="content_media" data-scrolly="fromRight">
                             <img src="assets/images/photo_felix.png" alt="profil Félix" />
@@ -173,27 +180,27 @@
                             <div class="points__moi" data-scrolly="fade">
                                 <p>
                                     <svg class="icon icon--md">
-                                        <use href="#icon-pokemon"></use>
-                                    </svg>
-                                    Pokemon
-                                </p>
-                                <p>
-                                    <svg class="icon icon--md">
                                         <use href="#icon-cartes"></use>
                                     </svg>
                                     Cartes à collectionner
                                 </p>
                                 <p>
                                     <svg class="icon icon--md">
-                                        <use href="#icon-jeu_video"></use>
+                                        <use href="#icon-pokemon"></use>
                                     </svg>
-                                    Jeux vidéos
+                                    Pokemon
                                 </p>
                                 <p>
                                     <svg class="icon icon--md">
                                         <use href="#icon-musique"></use>
                                     </svg>
                                     Trames sonores
+                                </p>
+                                <p>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-jeu_video"></use>
+                                    </svg>
+                                    Jeux vidéos
                                 </p>
                             </div>
                         </div>
@@ -269,6 +276,8 @@
                 </div>
             </section>
 
+
+
             <footer class="footer" id="footer">
                 <div class="wrapper">
                     <div class="footer__top">
@@ -288,7 +297,7 @@
                             <li><a href="index.html">Accueil</a></li>
                             <li><a href="index.html#propos">À Propos</a></li>
                             <li><a href="projets.html">Projets</a></li>
-                            <li><a href="">Utilisation de l'IA</a></li>
+                            <li><a href="ia_utilisation.html">Utilisation de l'IA</a></li>
                         </ul>
                     </div>
                     <hr>
@@ -299,7 +308,6 @@
 
                 </div>
             </footer>
-
 </body>
 
 </html>
