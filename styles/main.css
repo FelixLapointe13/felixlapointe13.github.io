@@ -2096,12 +2096,11 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 30px;
        column-gap: 30px;
-  row-gap: 60px;
+  row-gap: 30px;
 }
 @media (width <= 1024px) {
   .moi .moi_compose .points__moi {
     grid-template-columns: 1fr;
-    row-gap: 30px;
   }
 }
 .moi .moi_compose p {
