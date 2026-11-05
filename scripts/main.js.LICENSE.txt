@@ -1,5 +1,5 @@
 /*!
- * GSAP 3.15.0
+ * GSAP 3.15.1
  * https://gsap.com
  *
  * @license Copyright 2008-2026, GreenSock. All rights reserved.
@@ -8,7 +8,7 @@
 */
 
 /*!
- * Observer 3.15.0
+ * Observer 3.15.1
  * https://gsap.com
  *
  * @license Copyright 2008-2026, GreenSock. All rights reserved.
@@ -17,7 +17,7 @@
 */
 
 /*!
- * ScrollSmoother 3.15.0
+ * ScrollSmoother 3.15.1
  * https://gsap.com
  *
  * @license Copyright 2008-2026, GreenSock. All rights reserved.
@@ -26,7 +26,7 @@
 */
 
 /*!
- * ScrollTrigger 3.15.0
+ * ScrollTrigger 3.15.1
  * https://gsap.com
  *
  * @license Copyright 2008-2026, GreenSock. All rights reserved.
@@ -35,9 +35,10 @@
 */
 
 /*!
- * SplitText 3.15.0
+ * SplitText 3.15.1
  * https://gsap.com
  *
- * @license Copyright 2026, GreenSock. All rights reserved. Subject to the terms at https://gsap.com/standard-license.
+ * @license Copyright 2008-2026, GreenSock. All rights reserved.
+ * Subject to the terms at https://gsap.com/standard-license
  * @author: Jack Doyle
- */
+*/
